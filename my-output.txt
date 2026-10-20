@@ -1,4 +1,3 @@
-C:\Users\shahi\.jdks\openjdk-26.0.2\bin\java.exe "-javaagent:C:\Users\shahi\Documents\IntelliJ IDEA 2026.2.0.1\lib\idea_rt.jar=63146" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\shahi\Desktop\HW-4-MusicPlayer-main\MusicPlayer\out\production\MusicPlayer Test
 --- 1. Build the playlist ---
 true
 true

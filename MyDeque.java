@@ -62,7 +62,6 @@ class MyDeque<T> implements Iterable<T> {
     }
 
     // Approach: start at head and walk node by node until we find the value.
-    // compare with == so it only matches the exact same object type
     boolean remove(T value) {
         Node<T> currentNode = head;
         while (currentNode != null) {

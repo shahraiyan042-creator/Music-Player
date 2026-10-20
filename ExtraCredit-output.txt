@@ -1,0 +1,30 @@
+C:\Users\shahi\.jdks\openjdk-26.0.2\bin\java.exe "-javaagent:C:\Users\shahi\Documents\IntelliJ IDEA 2026.2.0.1\lib\idea_rt.jar=64411" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\shahi\Desktop\HW-4-MusicPlayer-main\MusicPlayer\out\production\MusicPlayer ExtraTest
+--- Undo ---
+undo add s4: true
+playlist: [Night Drive, Slow Tide, Copper Sky]
+find s4: null
+remove s2: true
+remove s3: true
+playlist: [Night Drive]
+undo remove s3: true
+undo remove s2: true
+playlist: [Night Drive, Slow Tide, Copper Sky]
+undo add s3: true
+undo add s2: true
+undo add s1 (playing): false
+playlist: [Night Drive]
+--- Repeat mode ---
+next: Static Bloom
+next: Night Drive
+next, repeat off: null
+--- Recently played ---
+[Song 5, Song 12, Song 11, Song 10, Song 9, Song 8, Song 7, Song 6, Song 4, Song 3]
+--- Top songs ---
+top 2: [Slow Tide, Night Drive]
+top 10: [Slow Tide, Night Drive, Copper Sky]
+--- Shuffle ---
+up next size: 4
+up next: [Static Bloom, Night Drive, Copper Sky, Slow Tide]
+playlist unchanged: [Night Drive, Slow Tide, Copper Sky, Static Bloom]
+
+Process finished with exit code 0

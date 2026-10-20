@@ -1,4 +1,4 @@
-// Structure choices (all Built from scratch, nothing reused from java.util ):
+// Structure choices (all Built from scratch except for ArrayList and List ):
 // Playlist    : Built my own doubly linked list (Node, head/tail inside MusicPlayer)
 // Library     : Built my own hash map (MyHashMap), id -- playlist node
 // Up next     : Built my own deque (MyDeque) using Node
@@ -74,7 +74,7 @@ public class MusicPlayer {
     }
 
     // Approach: skip over this node by pointing its neighbors at each other.
-    // the list is doubly linked, so we reach both neighbors from the node
+    // the  is doubly linked, so we reach both neighbors from the node
     private void unlink(Node<Song> songNode) {
         if (songNode.prev != null) {
             songNode.prev.next = songNode.next;
@@ -105,9 +105,9 @@ public class MusicPlayer {
         }
     }
 
-    // Approach: add a new node at the end of the playlist.
+    // Approach: add a new node at the end of the play.
     // Using tail pointer , adding at the end takes O(1).
-    // HashMap<Node<Song song>> library: saves id -> node so every other method can find the song
+    // MyHashMap<Node<Song song>> library: saves id -> node so every other method can find the song
     public boolean addSong(String id, String title, String artist) {
         if (library.containsKey(id)) {
             return false;
@@ -137,7 +137,7 @@ public class MusicPlayer {
     }
 
     // Approach: start at head and follow next until the end.
-    // the playlist is a linked list, so traverse one by one O(n).
+    // the play is a linked , so traverse one by one O(n).
     public List<String> showPlaylist() {
         List<String> titles = new ArrayList<>();
         Node<Song> currentNode = head;

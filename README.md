@@ -23,7 +23,7 @@ A Java project that acts like the engine of a music player. It keeps an ordered 
 
 ### Prerequisites
 
-- A JDK with `javac` and `java` available on your path
+- A JDK with `javac` and `java` available
 
 ### Compile and run
 
@@ -41,7 +41,7 @@ java ExtraTest
 ```
 
 > [!NOTE]
-> `Test.java` covers the required behavior. `ExtraTest.java` covers the extras, so the required output stays unchanged.
+> `Test.java` covers the required behavior. `ExtraTest.java` covers the extra credit methods
 
 ## Project structure
 
@@ -55,8 +55,6 @@ java ExtraTest
 └── ExtraTest.java     # extra features
 ```
 
-> [!NOTE]
-> `Node` and `Song` live alongside these files. Adjust the tree above to match your folder.
 
 ## Data structures
 
@@ -97,4 +95,4 @@ I built a doubly linked list and made the library store each song's node. That w
 
 ### Library
 
-I wrote my own hash map for song lookup and for play counts. With chaining, lookups and updates are O(1) on average, while searching an unsorted array by ID is O(n). Java's `HashMap` would give about the same speed with a lot less work. I built my own so I'd actually have to deal with buckets, collisions, and resizing.
+I wrote my own hash map for song lookup and for play counts. With chaining, lookups and updates are O(1) on average, while searching an unsorted array by ID is O(n). Java's `HashMap` would give about the same speed with a lot less work. 

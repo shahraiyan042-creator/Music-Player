@@ -1,15 +1,5 @@
 # Music Player
 
-A Java project that acts like the engine of a music player. It keeps an ordered playlist, an "up next" list, a back button, and fast song lookup. It doesn't play real audio. It only models how a player behaves.
-
-## Table of contents
-
-- [Features](#features)
-- [Getting started](#getting-started)
-- [Project structure](#project-structure)
-- [Data structures](#data-structures)
-- [Big-O](#big-o)
-- [Design choices](#design-choices)
 
 ## Features
 
@@ -90,9 +80,7 @@ Here **n** is the number of songs, and **k** is how many removed songs `next()` 
 ## Design choices
 
 ### Playlist
-
 I built a doubly linked list and made the library store each song's node. That way adding to the end or removing a node I already have is O(1), and `next()` just follows the node's `next` pointer. A plain array would be worse because removing from the middle shifts everything after it, which is O(n). Java's `LinkedList` doesn't let you hold onto its nodes, so removing by ID would mean searching for it first, unless I added a separate index.
 
 ### Library
-
-I wrote my own hash map for song lookup and for play counts. With chaining, lookups and updates are O(1) on average, while searching an unsorted array by ID is O(n). Java's `HashMap` would give about the same speed with a lot less work. 
+I wrote my own hash map for song lookup and for play counts. With chaining, lookups and updates are O(1) on average, while searching an unsorted array by ID is O(n).
